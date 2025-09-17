@@ -1,6 +1,11 @@
+import { RouterProvider } from 'react-router-dom';
+import { router } from './shared/routes/router';
 const App = () => {
   return (
-    <div>hi</div>
+    <>
+      <RouterProvider router={router}/>
+      <div>hi</div>
+    </>
   )
 }
 
