@@ -1,14 +1,22 @@
 @theme {
     /* color */
-    --color-background: '#F8F8F8',
-    --color-beige: '#DBD8D7',
-    --color-black: '#040404',
-    --color-orange: ' #FE7120',
-    --color-alert: '#F56A6F',
+    --color-background: #F8F8F8;
+    --color-beige: #DBD8D7;
+    --color-black: #040404;
+    --color-orange: #FE7120;
+    --color-alert: #F56A6F;
 }
 
 @layer utilities {
     /* Typography */
+    .title_01 {
+        font-family: 'NewYork';
+        font-weight: 400;
+        font-size: 9.6rem;
+        line-height: 7.1rem;
+        letter-spacing: -0.288rem;
+    }
+
     .title_02 {
         font-weight: 500;
         font-size: 3.2rem;
