@@ -1,0 +1,89 @@
+@theme {
+    /* color */
+    --color-background: #F8F8F8;
+    --color-beige: #DBD8D7;
+    --color-black: #040404;
+    --color-orange: #FE7120;
+    --color-alert: #F56A6F;
+}
+
+@layer utilities {
+    /* Typography */
+    .title_01 {
+        font-family: 'NewYork';
+        font-weight: 400;
+        font-size: 9.6rem;
+        line-height: 7.1rem;
+        letter-spacing: -0.288rem;
+    }
+
+    .title_02 {
+        font-weight: 500;
+        font-size: 3.2rem;
+        line-height: 5rem;
+        letter-spacing: -0.128rem;
+    }
+
+    .subtitle_01 {
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 4.4rem;
+        letter-spacing: -0.1rem;
+    }
+
+    .subtitle_02 {
+        font-weight: 400;
+        font-size: 2.9rem;
+        line-height: 6rem;
+        letter-spacing: -0.087rem;
+    }
+
+    .subtitle_02_sb {
+        font-weight: 600;
+        font-size: 2.9rem;
+        line-height: 6rem;
+        letter-spacing: -0.087rem;
+    }
+
+    .subtitle_03 {
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 5rem;
+        letter-spacing: -0.14rem;
+    }
+
+    .body_01 {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 5.9rem;
+        letter-spacing: -0.06rem;      
+    }
+
+    .body_02 {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.3rem;
+        letter-spacing: -0.08rem;      
+    }
+
+    .body_02 {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.3rem;
+        letter-spacing: -0.08rem;      
+    }
+
+    .caption {
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 5rem;
+        letter-spacing: 5rem;      
+    }
+
+    .name_text {
+        font-weight: 500;
+        font-size: 4.2rem;
+        line-height: 5rem;
+        letter-spacing: -0.168rem;  
+    }
+}
