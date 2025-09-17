@@ -21,7 +21,20 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* path alias */
+    "baseUrl": ".",
+		"paths": {
+			"@pages/*": ["./src/pages/*"],
+			"@components/*": ["./src/shared/components/*"],
+			"@constans/*": ["./src/shared/constants/*"],
+			"@utils/*": ["./src/shared/utils/*"],
+			"@styles/*": ["./src/shared/styles/*"],
+			"@routes/*": ["./src/shared/routes/*"],
+			"@svg/*": ["./src/shared/svg/*"],
+			"@/*": ["./src/*"]
+		}
   },
   "include": ["src"]
 }
