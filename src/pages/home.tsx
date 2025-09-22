@@ -1,11 +1,12 @@
 import Button from '@components/button';
-import IcArrowIcon from '@/shared/assets/ic_arrow_right.svg?react';
+import LogoImg from '/logo_img.png';
 
 const Home = () => {
   return (
-    <div>
-      <Button text='시작하기' icon={<IcArrowIcon/>}/>
-    </div>
+    <main className='flex flex-col items-center justify-between py-[14.9rem] h-full'>
+      <img src={LogoImg} alt='로고' className='w-[40rem]' />
+      <Button text='시작하기' variant='white'/>
+    </main>
   );
 };
 
