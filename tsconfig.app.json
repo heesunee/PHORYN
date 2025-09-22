@@ -25,16 +25,17 @@
 
     /* path alias */
     "baseUrl": ".",
-		"paths": {
-			"@pages/*": ["./src/pages/*"],
-			"@components/*": ["./src/shared/components/*"],
-			"@constans/*": ["./src/shared/constants/*"],
-			"@utils/*": ["./src/shared/utils/*"],
-			"@styles/*": ["./src/shared/styles/*"],
-			"@routes/*": ["./src/shared/routes/*"],
-			"@svg/*": ["./src/shared/svg/*"],
-			"@/*": ["./src/*"]
-		}
+    "paths": {
+      "@pages/*": ["./src/pages/*"],
+      "@assets/*": ["./src/shared/assets/*"],
+      "@components/*": ["./src/shared/components/*"],
+      "@constans/*": ["./src/shared/constants/*"],
+      "@utils/*": ["./src/shared/utils/*"],
+      "@styles/*": ["./src/shared/styles/*"],
+      "@routes/*": ["./src/shared/routes/*"],
+      "@svg/*": ["./src/shared/svg/*"],
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
