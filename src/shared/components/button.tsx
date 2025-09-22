@@ -25,11 +25,12 @@ const buttonVariants = cva(
 interface ButtonProps extends VariantProps<typeof buttonVariants>{
   text: string;
   icon?: ReactNode;
+  onClick?: () => void;
 }
 
-const Button = ({text, variant, size, icon} : ButtonProps) => {
+const Button = ({text, variant, size, icon, onClick} : ButtonProps) => {
   return (
-    <button type='button' className={buttonVariants({variant, size})} aria-label={text}>
+    <button type='button' className={buttonVariants({variant, size})} aria-label={text} onClick={onClick}>
       {text}
       {icon}
     </button>
