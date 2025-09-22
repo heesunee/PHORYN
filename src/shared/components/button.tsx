@@ -2,7 +2,7 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import type { ReactNode } from 'react';
 
 const buttonVariants = cva(
-  'body_01 justify-center items-center flex gap-[1rem] bg-white border-[1px] border-border text-black hover:bg-black hover:text-white',
+  'body_01 justify-center items-center flex gap-[1rem] bg-white border-[1px] border-border text-black hover:bg-black hover:text-white transition-colors duration-200 ease-in',
   {
     variants: {
       size: {
