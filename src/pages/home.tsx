@@ -1,9 +1,11 @@
+import Button from '@components/button';
+
 const Home = () => {
   return (
-    <div className='title_01'>
-      Home
+    <div>
+      <Button text='시작하기' />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
