@@ -6,5 +6,5 @@ import NameInput from '@pages/name-input';
 export const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: '/intro', element: <Intro /> },
-  { path: '/name-input', element: <NameInput/>}
-])
+  { path: '/name-input', element: <NameInput /> },
+]);

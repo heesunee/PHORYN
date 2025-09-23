@@ -2,7 +2,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import type { ReactNode } from 'react';
 
 const buttonVariants = cva(
-'body_01 justify-center items-center flex gap-[1rem] transition-colors duration-200 ease-in disabled:bg-gray disabled:text-border disabled:cursor-not-allowed disabled:hover:bg-gray disabled:hover:text-border',
+  'body_01 justify-center items-center flex gap-[1rem] transition-colors duration-200 ease-in disabled:bg-gray disabled:text-border disabled:cursor-not-allowed disabled:hover:bg-gray disabled:hover:text-border',
   {
     variants: {
       variant: {
@@ -36,7 +36,7 @@ const Button = ({
   size,
   icon,
   onClick,
-  disabled
+  disabled,
 }: ButtonProps) => {
   return (
     <button
