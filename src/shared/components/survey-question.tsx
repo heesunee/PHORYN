@@ -5,7 +5,7 @@ interface Answer {
 }
 
 interface SurveyQuestionProps {
-  questionNumber: number;
+  questionNumber: string;
   questionText: string;
   answers: Answer[];
   onSelect: (answerIndex: number) => void;
@@ -27,7 +27,7 @@ const SurveyQuestion = ({
         {answers.map((answer, index) => (
           <Button
             key={index}
-            text={`Q${index+1}.${answer.text}`}
+            text={`${index+1}. ${answer.text}`}
             size='xl'
             onClick={() => onSelect(index)} 
           />
