@@ -1,4 +1,4 @@
-export const Q1_DATA = {
+const Q1_DATA = {
   questionNumber: 'Q1.',
   questionText: '오늘 하루의 에너지는 어땠나요?',
   answers: [
@@ -10,7 +10,7 @@ export const Q1_DATA = {
   ],
 };
 
-export const Q2_DATA = {
+const Q2_DATA = {
   questionNumber: 'Q2.',
   questionText: '지금 기분은 어느쪽에 가깝나요?',
   answers: [
@@ -22,9 +22,9 @@ export const Q2_DATA = {
   ],
 };
 
-export const Q3_DATA = {
+const Q3_DATA = {
   questionNumber: 'Q3.',
-  questionText: `최근 예상치 못한 일로 <br/> 스트레스를 받은 적이 얼마나 있었나요?`,
+  questionText: `최근 예상치 못한 일로 \n 스트레스를 받은 적이 얼마나 있었나요?`,
   answers: [
     { text: '전혀 없었어요.' },
     { text: '거의 없었어요.' },
@@ -34,7 +34,7 @@ export const Q3_DATA = {
   ],
 };
 
-export const Q4_DATA = {
+const Q4_DATA = {
   questionNumber: 'Q4.',
   questionText: '요즘 자주 느끼는 감정은 무엇인가요?',
   answers: [
@@ -46,9 +46,9 @@ export const Q4_DATA = {
   ],
 };
 
-export const Q5_DATA = {
+const Q5_DATA = {
   questionNumber: 'Q5.',
-  questionText: `요즘 한 가지 일에 집중이 <br/> 얼마나 잘 되었나요?`,
+  questionText: `요즘 한 가지 일에 집중이 \n  얼마나 잘 되었나요?`,
   answers: [
     { text: '완전히 몰입할 수 있었어요.' },
     { text: '꽤 집중이 잘 돼요.' },
@@ -58,9 +58,9 @@ export const Q5_DATA = {
   ],
 };
 
-export const Q6_DATA = {
+const Q6_DATA = {
   questionNumber: 'Q6.',
-  questionText: `지난 한 달 동안, 자신의 일이 뜻대로 <br/> 진행된다고 느낀적은 얼마나 있었나요?`,
+  questionText: `지난 한 달 동안, 자신의 일이 뜻대로 \n  진행된다고 느낀적은 얼마나 있었나요?`,
   answers: [
     { text: '매우 자주 있었어요.' },
     { text: '자주 있었어요.' },
@@ -70,7 +70,7 @@ export const Q6_DATA = {
   ],
 };
 
-export const Q7_DATA = {
+const Q7_DATA = {
   questionNumber: 'Q7.',
   questionText: `최근, 최상의 컨디션이라고 얼마나 자주 느꼈나요?`,
   answers: [
@@ -82,9 +82,9 @@ export const Q7_DATA = {
   ],
 };
 
-export const Q8_DATA = {
+const Q8_DATA = {
   questionNumber: 'Q8.',
-  questionText: `지난 한 달 동안, 어려운 일이 많이 쌓여 <br/> 극복할 수 없겠다고 느낀 적이 있었나요?`,
+  questionText: `지난 한 달 동안, 어려운 일이 많이 쌓여 \n 극복할 수 없겠다고 느낀 적이 있었나요?`,
   answers: [
     { text: '거의 없었어요.' },
     { text: '조금 있는 편이에요.' },
@@ -94,9 +94,9 @@ export const Q8_DATA = {
   ],
 };
 
-export const Q9_DATA = {
+const Q9_DATA = {
   questionNumber: 'Q9.',
-  questionText: `지난 한 달 동안, 매사를 잘 컨트롤하고 있다고 <br/> 느낀 적이 얼마나 있었나요?`,
+  questionText: `지난 한 달 동안, 매사를 잘 컨트롤하고 있다고 \n  느낀 적이 얼마나 있었나요?`,
   answers: [
     { text: '전혀 없었어요.' },
     { text: '거의 없었어요.' },
@@ -106,7 +106,7 @@ export const Q9_DATA = {
   ],
 };
 
-export const Q10_DATA = {
+const Q10_DATA = {
   questionNumber: 'Q10.',
   questionText: `지금 내게 가장 필요한 것은 무엇인가요?`,
   answers: [
@@ -117,3 +117,16 @@ export const Q10_DATA = {
     { text: '활기찬 에너지.' },
   ],
 };
+
+export const QUESTION_LIST = [
+  Q1_DATA,
+  Q2_DATA,
+  Q3_DATA,
+  Q4_DATA,
+  Q5_DATA,
+  Q6_DATA,
+  Q7_DATA,
+  Q8_DATA,
+  Q9_DATA,
+  Q10_DATA,
+];

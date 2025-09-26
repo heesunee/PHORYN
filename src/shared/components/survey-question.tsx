@@ -21,7 +21,7 @@ const SurveyQuestion = ({
     <section className="flex flex-col items-center gap-[9.6rem] text-center text-brown">
       <div className="flex flex-col items-center gap-[4.1rem] text-center">
         <h1 className="title_01">{questionNumber}</h1>
-        <p className="title_02">{questionText}</p>
+        <p className="title_02 whitespace-pre-line">{questionText}</p>
       </div>
       <div className="flex flex-col gap-[3rem]">
         {answers.map((answer, id) => (

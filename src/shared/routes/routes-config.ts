@@ -3,4 +3,5 @@ export const ROUTES = {
   INTRO: '/intro',
   NAME_INPUT: '/name-input',
   SURVEY: '/survey',
+  RESULT: '/result',
 };
