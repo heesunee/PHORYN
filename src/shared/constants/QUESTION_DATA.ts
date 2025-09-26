@@ -117,4 +117,3 @@ export const Q10_DATA = {
     { text: '활기찬 에너지.' },
   ],
 };
-

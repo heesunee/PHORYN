@@ -4,7 +4,7 @@ import { Q1_DATA } from '@constans/QUESTION_DATA';
 
 const Survey = () => {
   return (
-    <main className='flex flex-col items-center pt-[6.8rem] px-[6rem] gap-[22.2rem]'>
+    <main className="flex flex-col items-center gap-[22.2rem] px-[6rem] pt-[6.8rem]">
       <StepProgress total={10} current={0} />
       <SurveyQuestion
         questionNumber={Q1_DATA.questionNumber}

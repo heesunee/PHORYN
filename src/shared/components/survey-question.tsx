@@ -18,18 +18,18 @@ const SurveyQuestion = ({
   onSelect,
 }: SurveyQuestionProps) => {
   return (
-    <section className='text-brown text-center flex flex-col items-center gap-[9.6rem]'>
-      <div className='text-center flex flex-col items-center gap-[4.1rem]'>
-        <h1 className='title_01'>{questionNumber}</h1>
-        <p className='title_02'>{questionText}</p>
+    <section className="flex flex-col items-center gap-[9.6rem] text-center text-brown">
+      <div className="flex flex-col items-center gap-[4.1rem] text-center">
+        <h1 className="title_01">{questionNumber}</h1>
+        <p className="title_02">{questionText}</p>
       </div>
-      <div className='flex flex-col gap-[3rem]'>
-        {answers.map((answer, index) => (
+      <div className="flex flex-col gap-[3rem]">
+        {answers.map((answer, id) => (
           <Button
-            key={index}
-            text={`${index+1}. ${answer.text}`}
-            size='xl'
-            onClick={() => onSelect(index)} 
+            key={questionNumber}
+            text={`${id + 1}. ${answer.text}`}
+            size="xl"
+            onClick={() => onSelect(id)}
           />
         ))}
       </div>

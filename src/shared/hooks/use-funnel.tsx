@@ -24,8 +24,7 @@ export const useFunnel = <T extends readonly string[]>(steps: T, completePath: s
       setSearchParams({ step: steps[0] }, { replace: true });
       return;
     }
-
-  }, [stepFromUrl, isValidStep, setSearchParams, steps, navigate]);
+  }, [stepFromUrl, setSearchParams, steps]);
 
   const goTo = useCallback(
     (step: T[number]) => {
