@@ -1,6 +1,9 @@
 @theme {
     /* color */
     --color-background: #F8F8F8;
+    --color-brown: #2B1000;
+    --color-gray: #EEE;
+    --color-border: #525050;
     --color-beige: #DBD8D7;
     --color-black: #040404;
     --color-orange: #FE7120;
@@ -66,18 +69,10 @@
         letter-spacing: -0.08rem;      
     }
 
-    .body_02 {
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 3.3rem;
-        letter-spacing: -0.08rem;      
-    }
-
     .caption {
         font-weight: 400;
         font-size: 1.7rem;
-        line-height: 5rem;
-        letter-spacing: 5rem;      
+        line-height: 5rem;  
     }
 
     .name_text {

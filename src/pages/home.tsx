@@ -1,9 +1,30 @@
-const Home = () => {
-  return (
-    <div className='title_01'>
-      Home
-    </div>
-  )
-}
+import { useNavigate } from 'react-router-dom';
+import { motion, useAnimation } from 'framer-motion';
+import Button from '@components/button';
+import LogoImg from '/logo_img.png';
 
-export default Home
+const Home = () => {
+  const navigate = useNavigate();
+  const controls = useAnimation();
+
+  const handleStart = () => {
+    controls.start({
+      opacity: 0,
+      transition: { duration: 0.3, ease: 'easeIn' },
+    });
+    navigate('/intro');
+  };
+
+  return (
+    <motion.main
+      initial={{ opacity: 1, y: 0 }}
+      animate={controls}
+      className="flex flex-col items-center justify-between py-[14.9rem] h-full"
+    >
+      <img src={LogoImg} alt="로고" className="w-[38.3rem]" />
+        <Button text="시작하기" variant="white" onClick={handleStart}/>
+    </motion.main>
+  );
+};
+
+export default Home;

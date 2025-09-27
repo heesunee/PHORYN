@@ -145,3 +145,10 @@
     outline: none;
   }
 }
+
+button:disabled {
+  opacity: 1;         
+  color: inherit;     
+  background: inherit; 
+  cursor: not-allowed; 
+}
