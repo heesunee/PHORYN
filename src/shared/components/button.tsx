@@ -13,6 +13,7 @@ const buttonVariants = cva(
         m: 'h-[5rem] w-[15.8rem]',
         l: 'h-[6rem] w-[21rem]',
         xl: 'h-[8rem] w-[42.8rem]',
+        etc: 'h-[6.6rem] w-[24rem]',
       },
     },
     defaultVariants: {

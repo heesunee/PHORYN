@@ -3,25 +3,46 @@ import SurveyQuestion from '@components/survey-question';
 import { QUESTION_LIST } from '@constans/QUESTION_DATA';
 import { STEPS } from '@constans/STEPS';
 import { ROUTES } from '@routes/routes-config';
+import { handleGetCategory } from '@utils/survey';
+import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useFunnel } from '@/shared/hooks/use-funnel';
 
 const Survey = () => {
-  const { Funnel, Step, currentStep, currentIndex, steps, goNext } = useFunnel(
-    STEPS,
-    ROUTES.RESULT,
-  );
+  const { Funnel, currentIndex, Step, goNext } = useFunnel(STEPS, ROUTES.RESULT);
+  const { state } = useLocation();
+  const navigate = useNavigate();
+  const [selections, setSelections] = useState<number[]>(Array(QUESTION_LIST.length).fill(0));
+
+  const [userName] = useState(() => state.name);
+
+  const handleSelect = (value: number, i: number) => {
+    const next = [...selections];
+    next[i] = value;
+    setSelections(next);
+
+    const isLast = currentIndex === STEPS.length - 1;
+    if (!isLast) return goNext();
+
+    const totalScore = next.reduce((sum, v) => sum + v, 0);
+    const level = handleGetCategory(totalScore);
+
+    navigate(ROUTES.RESULT, {
+      state: { level, userName },
+    });
+  };
 
   return (
     <main className="flex flex-col items-center gap-[22.2rem] px-[6rem] pt-[6.8rem]">
       <Funnel>
         {QUESTION_LIST.map((q, i) => (
           <Step name={STEPS[i]} key={STEPS[i]}>
-            <StepProgress total={STEPS.length} current={i} key={STEPS[i]} />
+            <StepProgress total={STEPS.length} current={i + 1} />
             <SurveyQuestion
               questionNumber={q.questionNumber}
               questionText={q.questionText}
               answers={q.answers}
-              onSelect={goNext}
+              onSelect={(value: number) => handleSelect(value, i)}
             />
           </Step>
         ))}

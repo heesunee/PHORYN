@@ -26,10 +26,10 @@ const SurveyQuestion = ({
       <div className="flex flex-col gap-[3rem]">
         {answers.map((answer, id) => (
           <Button
-            key={questionNumber}
+            key={`${questionNumber}-${answer.text}`}
             text={`${id + 1}. ${answer.text}`}
             size="xl"
-            onClick={() => onSelect(id)}
+            onClick={() => onSelect(id + 1)}
           />
         ))}
       </div>
