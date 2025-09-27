@@ -4,4 +4,5 @@ export const ROUTES = {
   NAME_INPUT: '/name-input',
   SURVEY: '/survey',
   RESULT: '/result',
+  PERFUME: '/perfume',
 };

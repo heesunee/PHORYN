@@ -1,6 +1,7 @@
 import Home from '@pages/home';
 import Intro from '@pages/intro';
 import NameInput from '@pages/name-input';
+import Perfume from '@pages/purfume';
 import Result from '@pages/result';
 import Survey from '@pages/survey';
 import { ROUTES } from '@routes/routes-config';
@@ -12,4 +13,5 @@ export const router = createBrowserRouter([
   { path: ROUTES.NAME_INPUT, element: <NameInput /> },
   { path: ROUTES.SURVEY, element: <Survey /> },
   { path: ROUTES.RESULT, element: <Result /> },
+  { path: ROUTES.PERFUME, element: <Perfume /> },
 ]);
