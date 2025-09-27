@@ -9,12 +9,12 @@
     "ignoreUnknown": true,
     "includes": [
       "**",
-      "!**/dist/**",
-      "!**/build/**",
-      "!**/.next/**",
-      "!**/storybook-static/**",
-      "!**/.direnv/**",
-      "!**/docs/**"
+      "!**/dist",
+      "!**/build",
+      "!**/.next",
+      "!**/storybook-static",
+      "!**/.direnv",
+      "!**/docs"
     ]
   },
   "formatter": {
@@ -29,6 +29,7 @@
     "rules": {
       "recommended": true,
       "correctness": {
+        "noUnusedVariables": "off",
         "noUnusedImports": "error"
       },
       "nursery": {
@@ -73,3 +74,4 @@
     }
   }
 }
+
