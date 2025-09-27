@@ -48,3 +48,4 @@ const Button = ({ text, variant, size, icon, onClick, disabled, className }: But
 };
 
 export default Button;
+

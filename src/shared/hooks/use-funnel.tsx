@@ -71,3 +71,4 @@ export const useFunnel = <T extends readonly string[]>(steps: T, completePath: s
     Step,
   };
 };
+
