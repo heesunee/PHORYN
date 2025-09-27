@@ -1,7 +1,7 @@
 import Home from '@pages/home';
 import Intro from '@pages/intro';
 import NameInput from '@pages/name-input';
-import Perfume from '@pages/purfume';
+import Perfume from '@pages/perfume';
 import Result from '@pages/result';
 import Survey from '@pages/survey';
 import { ROUTES } from '@routes/routes-config';

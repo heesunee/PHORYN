@@ -1,3 +1,4 @@
+import { cn } from '@utils/cn';
 import { cva, type VariantProps } from 'class-variance-authority';
 import type { ReactNode } from 'react';
 
@@ -28,13 +29,14 @@ interface ButtonProps extends VariantProps<typeof buttonVariants> {
   icon?: ReactNode;
   onClick?: () => void;
   disabled?: boolean;
+  className?: string;
 }
 
-const Button = ({ text, variant, size, icon, onClick, disabled }: ButtonProps) => {
+const Button = ({ text, variant, size, icon, onClick, disabled, className }: ButtonProps) => {
   return (
     <button
       type="button"
-      className={buttonVariants({ variant, size })}
+      className={cn(buttonVariants({ variant, size }), className)}
       aria-label={text}
       onClick={onClick}
       disabled={disabled}

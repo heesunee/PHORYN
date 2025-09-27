@@ -26,9 +26,10 @@ const Survey = () => {
 
     const totalScore = next.reduce((sum, v) => sum + v, 0);
     const level = handleGetCategory(totalScore);
+    const perfume = selections[selections.length - 1] + 1;
 
     navigate(ROUTES.RESULT, {
-      state: { level, userName },
+      state: { level, userName, perfume },
     });
   };
 
@@ -37,7 +38,7 @@ const Survey = () => {
       <Funnel>
         {QUESTION_LIST.map((q, i) => (
           <Step name={STEPS[i]} key={STEPS[i]}>
-            <StepProgress total={STEPS.length} current={i + 1} />
+            <StepProgress total={STEPS.length} current={i} />
             <SurveyQuestion
               questionNumber={q.questionNumber}
               questionText={q.questionText}
