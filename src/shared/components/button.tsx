@@ -7,8 +7,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        white: 'border-[1px] border-border bg-white text-black hover:bg-black hover:text-white',
-        gray: 'bg-gray text-brown hover:bg-beige',
+        white:
+          'border-[1px] border-border bg-white text-black hover:bg-black hover:text-white active:bg-black active:text-white',
+        gray: 'bg-gray text-brown hover:bg-beige active:bg-beige',
       },
       size: {
         m: 'h-[5rem] w-[15.8rem]',
@@ -48,4 +49,3 @@ const Button = ({ text, variant, size, icon, onClick, disabled, className }: But
 };
 
 export default Button;
-

@@ -1,6 +1,6 @@
-import { useNavigate } from 'react-router-dom';
-import { motion, useAnimation } from 'framer-motion';
 import Button from '@components/button';
+import { motion, useAnimation } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import LogoImg from '/logo_img.png';
 
 const Home = () => {
@@ -19,10 +19,10 @@ const Home = () => {
     <motion.main
       initial={{ opacity: 1, y: 0 }}
       animate={controls}
-      className="flex flex-col items-center justify-between py-[14.9rem] h-full"
+      className="flex h-full flex-col items-center justify-between py-[14.9rem]"
     >
       <img src={LogoImg} alt="로고" className="w-[38.3rem]" />
-        <Button text="시작하기" variant="white" onClick={handleStart}/>
+      <Button text="시작하기" variant="white" onClick={handleStart} />
     </motion.main>
   );
 };
