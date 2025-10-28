@@ -1,28 +1,28 @@
-import { cn } from '@utils/cn';
-import { cva, type VariantProps } from 'class-variance-authority';
-import type { ReactNode } from 'react';
+import { cn } from "@utils/cn";
+import { cva, type VariantProps } from "class-variance-authority";
+import type { ReactNode } from "react";
 
 const buttonVariants = cva(
-  'body_01 flex items-center justify-center gap-[1rem] transition-colors duration-200 ease-in disabled:cursor-not-allowed disabled:bg-gray disabled:text-border disabled:hover:bg-gray disabled:hover:text-border',
+  "body_01 flex items-center justify-center gap-[1rem] transition-colors duration-200 ease-in disabled:cursor-not-allowed disabled:bg-gray disabled:text-border disabled:hover:bg-gray disabled:hover:text-border",
   {
     variants: {
       variant: {
         white:
-          'border-[1px] border-border bg-white text-black hover:bg-black hover:text-white active:bg-black active:text-white',
-        gray: 'bg-gray text-brown hover:bg-beige active:bg-beige',
+          "border-[1px] border-border bg-transparent text-black hover:bg-black hover:text-white active:bg-black active:text-white",
+        gray: "bg-gray text-brown hover:bg-beige active:bg-beige",
       },
       size: {
-        m: 'h-[5rem] w-[15.8rem]',
-        l: 'h-[6rem] w-[21rem]',
-        xl: 'h-[8rem] w-[42.8rem]',
-        etc: 'h-[6.6rem] w-[24rem]',
+        m: "h-[5rem] w-[15.9rem] gap-[0.625rem] caption_02",
+        l: "h-[6rem] w-[21rem]",
+        xl: "h-[8rem] w-[42.8rem]",
+        etc: "h-[6.6rem] w-[24rem]",
       },
     },
     defaultVariants: {
-      variant: 'gray',
-      size: 'm',
+      variant: "gray",
+      size: "m",
     },
-  },
+  }
 );
 
 interface ButtonProps extends VariantProps<typeof buttonVariants> {
@@ -33,7 +33,15 @@ interface ButtonProps extends VariantProps<typeof buttonVariants> {
   className?: string;
 }
 
-const Button = ({ text, variant, size, icon, onClick, disabled, className }: ButtonProps) => {
+const Button = ({
+  text,
+  variant,
+  size,
+  icon,
+  onClick,
+  disabled,
+  className,
+}: ButtonProps) => {
   return (
     <button
       type="button"

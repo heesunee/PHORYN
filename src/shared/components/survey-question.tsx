@@ -1,4 +1,4 @@
-import Button from './button';
+import Button from "./button";
 
 interface Answer {
   text: string;
@@ -27,7 +27,7 @@ const SurveyQuestion = ({
         {answers.map((answer, id) => (
           <Button
             key={`${questionNumber}-${answer.text}`}
-            text={`${id + 1}. ${answer.text}`}
+            text={`${answer.text}`}
             size="xl"
             onClick={() => onSelect(id + 1)}
           />
@@ -38,4 +38,3 @@ const SurveyQuestion = ({
 };
 
 export default SurveyQuestion;
-
