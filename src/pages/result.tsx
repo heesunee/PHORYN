@@ -61,7 +61,7 @@ const Result = () => {
   if (isLoading) {
     return (
       <main className="flex h-full flex-col items-center justify-center">
-        <div className="flex items-center border-2 justify-center w-[30rem]">
+        <div className="flex items-center justify-center w-[30rem]">
           <Player animationData={loading} autoplay loop />
         </div>
         <p className="subtitle_01 text-brown text-center">
